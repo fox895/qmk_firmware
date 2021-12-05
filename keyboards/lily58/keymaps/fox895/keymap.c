@@ -170,16 +170,17 @@ static void print_status_narrow(void) {
             oled_write("Base ", false);
             break;
         case _SYMBOLS:
-            oled_write("Symbols", false);
+            oled_write("Symb", false);
             break;
         case _ARROW:
             oled_write("Arrow", false);
             break;
         case _FUNCTIONS:
-            oled_write("Funcs  ", false);
+            oled_write("Func", false);
             break;
         case _MEDIA:
             oled_write("Media", true);
+            break;
         default:
             oled_write("Undef", false);
     }
