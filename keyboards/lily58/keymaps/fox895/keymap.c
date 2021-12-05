@@ -43,7 +43,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
  * |      |   `  |   {  |   [  |   (  |   <  |-------.    ,-------|   >  |   )  |   ]  |   }  |   '  |   ~  |
  * |------+------+------+------+------+------|   .   |    |    :  |------+------+------+------+------+------|
- * |      |   !  |   @  |   #  |   $  |   %  |-------|    |-------|   &  |   *  |   ,  |   .  |   -  |      |
+ * |      |   !  |   @  |   #  |   $  |   -  |-------|    |-------|   _  |   *  |   ,  |   .  |   -  |      |
  * `-----------------------------------------/       /     \      \-----------------------------------------'
  *                   |      |      |      | /       /       \      \  |  DEL |FUNCTS|      |
  *                   |      |      |      |/       /         \      \ |      |      |      |
@@ -54,7 +54,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,                   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
 KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,                     KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,
 KC_TRNS, KC_GRV,  KC_LCBR, KC_LBRC, KC_LPRN, KC_LT,                     KC_GT,   KC_RPRN, KC_RBRC, KC_RCBR, KC_QUOT, KC_TILD,
-KC_TRNS, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC, KC_PDOT, KC_COLN, KC_AMPR, KC_ASTR, KC_COMM, KC_DOT, KC_MINS, KC_TRNS,
+KC_TRNS, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_MINS, KC_DOT, KC_COLN, KC_UNDS, KC_ASTR, KC_COMM, KC_DOT, KC_MINS, KC_TRNS,
                            KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_DEL, MO(_FUNCTIONS), KC_TRNS
 ),
 
@@ -66,7 +66,7 @@ KC_TRNS, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC, KC_PDOT, KC_COLN, KC_AMPR,
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
  * |      |      |      |      |      |      |                    |      |      |      |      |      |      |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
- * |  GRV |   1  |   2  |   2  |   2  |   2  |-------.    ,-------| Left | Down |  Up  | Right|   :  |      |
+ * |      |   1  |   2  |   3  |   4  |   5  |-------.    ,-------| Left | Down |  Up  | Right|   :  |      |
  * |------+------+------+------+------+------|       |    |   \   |------+------+------+------+------+------|
  * |      |   6  |   7  |   8  |   9  |   0  |-------|    |-------|   +  |  -   |  =   |  [   |  ]   |      |
  * `-----------------------------------------/       /     \      \-----------------------------------------'
@@ -78,7 +78,7 @@ KC_TRNS, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC, KC_PDOT, KC_COLN, KC_AMPR,
 [_ARROW] = LAYOUT( \
 KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,                 KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
 KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,                   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
-KC_GRV,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,                    KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_COLN, KC_NO,
+KC_TRNS,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,                    KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_COLN, KC_NO,
 KC_TRNS, KC_6,    KC_7,    KC_8,    KC_9,    KC_0,  KC_TRNS, KC_BSLS, KC_PLUS, KC_MINS, KC_EQL,  KC_LBRC, KC_RBRC, KC_TRNS,
                            KC_TRNS, MO(_FUNCTIONS), KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS
 ),
@@ -113,7 +113,7 @@ KC_TRNS, KC_NO, KC_NO, KC_NO, KC_END, KC_PGDN, KC_F6,   KC_F7,   KC_PGUP, KC_HOM
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
  * |      |      |      |      |      |      |                    |      |      |      |      |      |      |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
- * |      |      | Mute | Vol- | Vol+ |      |-------.    ,-------|      | Prev | Play | Next |      | Calc |
+ * |      |      | Mute | Vol- | Vol+ |      |-------.    ,-------|      |      | Prev | Play | Next | Calc |
  * |------+------+------+------+------+------|       |    |       |------+------+------+------+------+------|
  * |      |      |      |      |      |      |-------|    |-------|      |      |      |      |      |      |
  * `-----------------------------------------/       /     \      \-----------------------------------------'
